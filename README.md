@@ -23,6 +23,8 @@ Specifically, uncertainties implemented in this code are as follows:
   Load model parameters, Voltage sensitivity, Voltage jump, Completely unknown uncertainties
 
 ## File Description
-- Stochastic_SFR.m: main file to run stochastic SFR model
+- Stochastic_SFR_final.m: main file to run stochastic SFR model
+- Deterministic_SFR.m: file to run deterministic SFR model
 - loadbus_3_500.xlsx: PSS/E simulation output on IEEE 39-bus system. A 500 MW load increase at Bus 3 is simulated.
-- volt_sensitivity.csv: Voltage sensitivity obtained by injecting reactive power perturbation signals at generator buses. Simulations are conducted by using PSS/E.
+- volt_sensitivity.csv: Voltage-to-Voltage sensitivity between load/generator bus to generator bus. This is obtained by injecting reactive power perturbation signals at generator buses. Simulations are conducted by using PSS/E.
+- voltH.csv: Voltage-to-Reactive power sensitivity. We use this information for our proposed estimation of the load bus voltages.
